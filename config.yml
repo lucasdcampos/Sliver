@@ -1,0 +1,11 @@
+# Basic information:
+title: 'my-website'
+base-url: ''
+lang: en
+authors: []
+version: 1.0
+
+post-output: 'article' # Here is the name of the folder in which the articles will be.
+templates: ['header.css', 'style.css', 'footer.css', 'blog.css'] # Styles to be included
+html-pages: ['index.html', 'blog.html', '404.html'] # Pages to be included
+

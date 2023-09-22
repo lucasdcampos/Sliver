@@ -1,0 +1,26 @@
+html{
+    min-height: 100%;
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    height: 64px;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    color: rgb(131, 191, 209);
+    height: 100%;
+}

@@ -1,0 +1,36 @@
+.blog-post{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(221, 211, 211, 0.7);
+    border-radius: 4px;
+}
+
+.post-title{
+    font-size: 18px;
+}
+
+.blog-post h2:hover{
+    color: rgb(67, 99, 167);
+}
+
+.blog h1, h2, p, ul{
+    margin-bottom: 15px;
+}
+
+.blog p{
+    margin-bottom: 30px;
+}
+
+.blog-post p{
+    font-size: 11px;
+}
+
+main img{
+    max-width: 950px;
+}
+
+.blog-post .post-description{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}

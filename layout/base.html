@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head lang="{{lang}}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+
+        <!-- Importing styles (This version will soon be deprecated!) -->
+        {{styles}}
+        {{styles2}}
+        {{styles3}}
+
+    </head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="{{baseurl}}index.html">{{title}}</a></h1>
+            
+            <!-- You can edit the pages here, don't forget to update the baseurl in the config.yml -->
+            <div class="items">
+                <a href="{{baseurl}}blog.html">Blog</a>
+                <a href="{{baseurl}}about.html">About</a>
+                <a href="{{baseurl}}contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+
+        <!-- If this is not a post page, this will not be rendered -->
+        {{ postContent }}
+    </main>
+
+    <footer>
+        <p>{{title}} © 2023 - Built with <a href="https://sliver.trivalent.tech">Sliver</a></p>
+    </footer>
+
+</body>
+</html>
