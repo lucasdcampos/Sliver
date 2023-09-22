@@ -16,7 +16,11 @@ def main():
     global config
     config = load_config()
     base_url = config.get('base-url', '')
-    
+
+    # Create the 'content/_posts' folder if it doesn't exist.
+    if not os.path.exists(input_folder):
+        os.makedirs(input_folder)
+
     # Create the article folder based on the configuration.
     create_article_folder(config)
 
@@ -34,7 +38,7 @@ def main():
 
             # Create an HTML file for each post.
             create_post_html(env, config, base_url, post, 'build/'+post_file_path)
-    
+
     # After processing the posts, render HTML pages.
     rendered_html_pages = render_html_pages(env, config, base_url)
 
@@ -43,7 +47,7 @@ def main():
         page_path = os.path.join(output_folder, page_name)
         with open(page_path, 'w', encoding='utf-8') as page_file:
             page_file.write(page_content)
-
+    
 def load_config():
     # Load the configuration settings from 'config.yml'.
     with open('config.yml', 'r') as config_yml:
@@ -205,3 +209,4 @@ class HTMLRendererWithHeaders(mistune.HTMLRenderer):
 
 if __name__ == "__main__":
     main()
+    input("Press enter to exit")
