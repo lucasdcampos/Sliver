@@ -14,7 +14,7 @@ Sliver is a Python script that enables you to generate static websites and blogs
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/sliver.git
+   git clone https://github.com/lukazof/sliver.git
    cd sliver
 
 2. **Install dependencies**
